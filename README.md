@@ -12,13 +12,13 @@ You need the following items for one unit:
 |1KΩ 125mW 0603 resistor|4|Originals used 125mW resistors, but 100mW would work too|
 |33nF 50V 0603 capacitor|4|I measured a range of 33-43nF in the originals
 |10 pin 0.1" header|1|Vertical or right angle variants will fit
-|CRE401 Repro PCB|1|I got them at OSH Park
+|CRE401 Repro PCB|1|I got them made at OSH Park
 
 ## Assembly
 The following steps are taken to assemble one unit:
-1. Sand off pcb break-off tabs if needed
+1. Sand off pcb break-off tabs if needed.
 2. Solder the 1KΩ resistors and 33nF caps to the back.
-3. Solder the 330Ω resistors to the front
+3. Solder the 330Ω resistors to the front.
 4. Solder the pin headers to the front or back.
 5. Make sure there are no solder bridges and enjoy!
 
@@ -38,19 +38,19 @@ The resistor values seemed to be common knowledge already, but I could not find 
 
 I removed a pair of every CRE401 type I had in my collection and measured the pins. This is the result:
 
-|Component|CRE401-17|CRE401-18|CRE401-19|
-|--|--|--|--|
-|R1|330Ω|330Ω|330Ω|
-|R2|1KΩ|1KΩ|1KΩ|
-|C1|33nF|35-36nF|41-43nF|
-|**Board**|**MV-LED**|**MV-LED**|**MV-2F**
+|Component|CRE401-17|CRE401-18|CRE401-19|CRE401-2N|
+|--|--|--|--|--|
+|R1|330Ω|330Ω|330Ω|330Ω|
+|R2|1KΩ|1KΩ|1KΩ|1KΩ|
+|C1|33nF|35-36nF|41-43nF|42-43nF|
+|**Board**|**MV-LED**|**MV-LED**|**MV-2F**|**MV-2F**|
 
-The resistors are bang-on with every part I measured, but the tolerances for the caps are pretty big. For this design I have decided on using 33nF caps, but slightly larger values would work too.
+The resistors are bang-on with every part I measured, but the tolerances for the caps are pretty big. For this design I have decided on using 33nF caps, but larger values as shown would work too.
 
 ## What if I just use 4 resistors?
 People seem to be using just 4 330Ω resistors as a last resort when no replacement is available. This has the following consequences:
 
- 1. **No defined "high" input.** This means you are relying purely on noise and input capacity to make the "high" input. This means it would work out of pure luck.
+ 1. **No defined "high" input.** This means you are relying purely on noise and input capacity to make the "high" input. I guess it would work out of pure luck.
  2. **No low pass filter and ESD protection.** This means you are vulnerable to pretty much all the noise to interfere, which may even help the missing pull-ups...
 
 When you are troubleshooting your beloved MVS you can use this as a quick test. But remember: *friends don't let friends substitute CRE401's with resistors*.
