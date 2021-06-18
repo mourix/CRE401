@@ -1,5 +1,6 @@
+
 # CRE401 Reproduction
-The CRE401 is a no longer produced RRC array found most commonly on SNK's Neo Geo boards. When made my MV-LED repro, I designed a little PCB to replace this array with 0603 resistors and caps. [The boards only costs $1.40 for 3pcs at OSH Park](https://oshpark.com/shared_projects/n6dnZQR1), and I invite you to make your own!
+The CRE401 is a no longer produced RRC array found most commonly on SNK's Neo Geo boards. When made my [MV-LED reproduction](https://github.com/mourix/MV-LED), I designed a little PCB to replace this array with 0603 resistors and caps. [The boards only costs $1.40 for 3pcs at OSH Park](https://oshpark.com/shared_projects/n6dnZQR1), and I invite you to make your own!
 
 ![CRE401_altium](https://raw.githubusercontent.com/mourix/CRE401_Reproduction/main/Pictures/CRE401_altium.jpg)
 # How do I make one?
